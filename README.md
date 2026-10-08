@@ -1,3 +1,3 @@
 test
-sucess
+successfully
 done yes
