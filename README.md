@@ -88,3 +88,10 @@ volumes:
 
     }
 }
+
+kubectl create deployment mynginx --image=nginx
+kubectl expose deployment mynginx --type=NodePort --port=80 --target-port=80
+kubectl scale deployment myngnix --replicas=4
+kubectl port-forward svc/myngnix 8084:80
+
+
